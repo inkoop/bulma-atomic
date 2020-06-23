@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "scss --watch scss/main.scss:build/css/style.css",
-    "build": "scss scss/main.scss:build/css/style.css --style compressed"
+    "build": "scss scss/main.scss:build/css/style.css --style compressed",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nirnejak/bulma-atomic.git"
+    "url": "git+https://github.com/inkoop/bulma-atomic.git"
   },
   "keywords": [
     "Bulma",
@@ -21,10 +23,12 @@
   "author": "Jitendra Nirnejak",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nirnejak/bulma-atomic/issues"
+    "url": "https://github.com/inkoop/bulma-atomic/issues"
   },
-  "homepage": "https://github.com/nirnejak/bulma-atomic#readme",
-  "devDependencies": {
-    "sass": "^1.26.1"
+  "homepage": "https://github.com/inkoop/bulma-atomic#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "sass": "^1.26.9",
+    "vuepress": "^1.5.2"
   }
 }
